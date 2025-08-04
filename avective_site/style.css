@@ -1,0 +1,196 @@
+/* Global variables for colors and spacing */
+:root {
+  --primary: #266a94;    /* Light blue for headings and accents */
+  --secondary: #2fac66;  /* Light green for call-to-action elements */
+  --text-dark: #333333;  /* Dark gray text */
+  --light-bg: #f9f9f9;   /* Light background for sections */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+  background: var(--light-bg);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  overflow: hidden;
+  margin-top: 70px; /* offset for fixed header */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: var(--secondary);
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+  background: var(--primary);
+}
+
+/* Section spacing and container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Services section */
+.services-section {
+  background: var(--light-bg);
+}
+
+.services-section h2,
+.about-section h2,
+.contact-section h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.pricing-list .service-name {
+  font-weight: 600;
+}
+
+.pricing-list .price {
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* About and contact sections */
+.about-section,
+.contact-section {
+  background: #ffffff;
+}
+
+.phone a {
+  font-size: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.phone a:hover {
+  color: var(--secondary);
+}
+
+footer {
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
